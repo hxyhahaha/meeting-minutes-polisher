@@ -197,7 +197,7 @@ python3 skills/meeting-minutes-polisher/scripts/run_with_openai_responses.py \
 
 ## 发布到GitHub时只上传workflow
 
-如果你准备公开仓库，建议只上传下面这些文件：
+公开仓库建议只保留workflow文件：
 
 - `README.md`
 - `.gitignore`
@@ -207,8 +207,6 @@ python3 skills/meeting-minutes-polisher/scripts/run_with_openai_responses.py \
 - `skills/meeting-minutes-polisher/references/style-guide.md`
 - `skills/meeting-minutes-polisher/scripts/export_minutes_to_docx.py`
 - `skills/meeting-minutes-polisher/scripts/run_with_openai_responses.py`
-
-建议的Git命令思路也是只添加这些workflow文件，而不是直接上传整个工作目录。
 
 ## 自检机制
 
@@ -224,43 +222,15 @@ python3 skills/meeting-minutes-polisher/scripts/run_with_openai_responses.py \
 
 如果某个专有名词无法确认，默认要求使用更保守的写法，而不是强行“纠正”成一个可能错误的词。
 
-## 适合公开仓库，但不适合公开的数据
+## 公开仓库注意事项
 
-适合公开：
+请勿上传以下内容：
 
-- workflow规则
-- 格式规范
-- Word导出脚本
-- 示例提示词
+- 任何真实会议纪要、整理稿、转写文本、PDF原文或Word成品
+- 客户、专家或内部交流材料
+- 任何API key、私有配置或带真实key的环境变量文件
 
-不建议公开：
-
-- 客户会议原文
-- 专家访谈实录
-- 内部会议纪要
-- 带公司敏感信息的完整转写
-- 任何私有API配置
-- 你自己已经写过的任何公司会议纪要、整理稿、Word成品、PDF原文或提取文本
-- 任何真实API key或带真实key的环境变量文件
-
-## 许可证与使用建议
-
-如果你准备公开发布，建议你自行补充许可证，并在仓库首页说明：
-
-- 该项目提供的是workflow设计，不提供模型访问权限
-- 使用者需自行准备合规的数据来源与模型环境
-- 使用者应自行承担会议原文上传、处理和分享时的合规责任
-
-## 备注
-
-如果你准备把这个项目正式发布到GitHub，建议至少保留以下文件：
-
-- `README.md`
-- `skills/meeting-minutes-polisher/SKILL.md`
-- `skills/meeting-minutes-polisher/references/style-guide.md`
-- `skills/meeting-minutes-polisher/scripts/export_minutes_to_docx.py`
-
-公开上传时，建议只上传workflow本身，不上传任何真实公司材料。当前项目中的公司会议纪要、整理稿、转写文本、PDF和Word成品都不应进入公开仓库。
+本项目仅提供workflow设计，不提供模型访问权限。使用者需自行准备Codex环境或自备API key，并自行承担数据处理合规责任。
 
 ## 相关说明
 
