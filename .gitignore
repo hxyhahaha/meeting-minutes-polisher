@@ -1,0 +1,34 @@
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+
+# Local credentials
+.python-version
+.npmrc
+.yarnrc
+
+# OS / editor
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Local outputs and scratch files
+outputs/
+tmp_docx_edit/
+
+# Private meeting materials in project root
+/*.txt
+/*.docx
+/*.pdf
+
+# Extra extracted source materials
+*.extracted.txt

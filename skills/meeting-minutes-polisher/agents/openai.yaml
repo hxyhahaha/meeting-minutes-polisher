@@ -1,0 +1,4 @@
+interface:
+  display_name: "会议纪要整理"
+  short_description: "将公司会议转写整理为完整、书面、结构化且不漏信息的纪要"
+  default_prompt: "Use $meeting-minutes-polisher to turn the pasted multi-part company meeting transcript into a faithful Chinese memo, a concise key-points summary, and a Word document without losing important facts."
