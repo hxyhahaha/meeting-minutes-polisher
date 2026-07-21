@@ -195,18 +195,6 @@ python3 skills/meeting-minutes-polisher/scripts/run_with_openai_responses.py \
 - 可以接入OpenAI API，也可以接入兼容的base URL
 - 多段转写需要使用者先自行合并为一个文本文件，或者自行扩展脚本
 
-### 方式三：迁移为其他平台的工作流
-
-如果你不使用Codex，也可以把这套规则迁移到：
-
-- 自己的Prompt工程
-- 内部知识助手
-- 网页工具
-- 桌面应用
-- 其他支持大模型调用的自动化系统
-
-但迁移后，模型调用、会话记忆、多段输入拼接与文件导出能力都需要你自己提供。
-
 ## 发布到GitHub时只上传workflow
 
 如果你准备公开仓库，建议只上传下面这些文件：
